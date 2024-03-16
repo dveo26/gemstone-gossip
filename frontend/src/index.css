@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./assets/png.jpg");
+body {
+  background: linear-gradient(rgba(195, 177, 177, 0.2), rgba(0, 0, 0, 0.2)), url("./assets/v960-ning-11.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-::-webkit-scrollbar{
-  
-  background: #555;
+
+.chat-list,
+.conversation-panel {
+  backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+  background: #414141;
+  backdrop-filter: blur(10px);
 
 }
 ::-webkit-scrollbar-track{
  
   background: grey;
+  backdrop-filter: blur(10px);
   
 }
 ::-webkit-scrollbar-thumb{

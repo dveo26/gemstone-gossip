@@ -12,7 +12,7 @@ export default function Conversation() {
         </div>
         <div className='flex flex-col flex-1'>
             <div className='flex gap-3 justify-between'>
-                <p className='font-bold text-gray-200'>Yashita</p>
+                <p className='font-bold text-gray-200'>username</p>
                 <span className='text-x1'></span>
             </div>
 
