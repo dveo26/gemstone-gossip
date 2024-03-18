@@ -23,8 +23,8 @@ const SignUp = () => {
     <div className="flex flex-col items-center judtify-center min-w-96 mx-auto">
       <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
         <h1
-          className="text-3x1 font-semibold text-center text-gray-300"
-          style={{ color: "white" }}
+          className="text-4xl font-semibold text-center text-[#1B4965]"
+          
         >
           Sign Up <span className="text-blue-500"></span>
         </h1>

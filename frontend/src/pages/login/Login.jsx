@@ -13,43 +13,44 @@ const Login = () => {
     <>
       <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
         <div className="h-full w-full bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border border-gray-100">
-          <h1 className="text-3x1 font-semibold text-center text-gray-300">
+          <h1 className="text-3xl font-semibold text-center text-white">
             Login
-            <span className="text-blue-500">webchatting</span>
+            
+            <span className="text-[#1B4965] text-3xl"> Chit-Chat</span>
           </h1>
           <form onSubmit={handleSubmit}>
             <div>
               <label className="label p-2">
-                <span className="text-base label-text">Username</span>
+                <span className="text-base label-text text-white">Username</span>
               </label>
               <input
                 type="text"
                 placeholder="Enter username"
-                className="w-full input input-bordered h-10"
+                className="w-full input input-bordered h-12 text-lg"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
             </div>
             <div>
               <label className="label">
-                <span className="text-base label-text">Password</span>
+                <span className="text-base label-text text-white">Password</span>
               </label>
               <input
                 type="password"
                 placeholder="Enter password"
-                className="w-full input input-bordered h-10"
+                className="w-full input input-bordered h-12 text-lg"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <Link
               to="/signup"
-              className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block"
+              className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block text-white"
             >
               {"Don't"} have an account?
             </Link>
             <div>
-              <button className="btn btn-block btn-sm mt-2" disabled={loading}>
+              <button className="btn btn-block btn-sm mt-2 text-white"  style={{ height: '40px', padding: '10px 20px', fontSize: '16px' }}  disabled={loading}>
                 {loading ? <span className='loading loading-spinner'></span>:"Login"}
               </button>
             </div>

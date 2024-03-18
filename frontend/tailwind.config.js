@@ -8,4 +8,8 @@ export default {
     extend: {},
   },
   plugins: [require("daisyui")],
+  colors:{
+    sadhana:'#B9D9EB'
+  }
+
 }
